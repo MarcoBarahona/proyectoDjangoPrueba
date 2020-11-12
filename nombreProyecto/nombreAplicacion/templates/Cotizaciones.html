@@ -1,0 +1,92 @@
+{% extends 'Planillabase.html' %}
+{% block contenido %}
+<form action="{% url 'cotizaciones' %}" method="post">
+    {% csrf_token %}
+    <br>
+    <div class="row justify-content-center">
+        <h2>Cotizaciones</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-1">
+            Nombre
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="text" name="txtNombre" class="txtNombre form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-1">
+            Email
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="text" name="txtEmail" class="txtNombre form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-1">
+            Telefono
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="text" name="txtTelefono" class="txtTelefono form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12 col-md-1 offset-md-4">
+          Ciudad
+        </div>
+        <select name="Ciudad">
+            <option value="0">seleccionar</option>
+            <option value="1">Iquique</option>
+            <option value="2">Antofagasta</option>
+            <option value="3">Copiapó</option>
+            <option value="4">Arica</option>
+            <option value="5">Coyhaique</option>
+            <option value="6">Concepción</option>
+            <option value="7">La Serena</option>
+            <option value="8">Temuco</option>
+            <option value="9">Puerto Montt</option>
+            <option value="10">Valdivia</option>
+            <option value="11">Punta Arenas</option>
+            <option value="12">Talca</option>
+            <option value="13">Santiago</option>
+            <option value="14">Chillán</option>
+            <option value="15">Rancagua</option>
+            <option value="16">Valparaíso</option>
+        </select> 
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-1">
+            Producto
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="text" name="txtProducto" class="txtNombre form-control" required>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-1">
+            Cantidad
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="text" name="txtCantidad" class="txtNombre form-control" required>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-1">
+            Comentario
+        </div>
+        <div class="col-12 col-md-4">
+            <input type="text" name="txtComentario" class="txtNombre form-control" required>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+            <input type="submit" name="btnEnviar" class="btn btn-primary" value="Enviar">
+            <input type="submit" name="btnLimpiar" class="btn btn-primary" value="Limpiar">
+        </div>
+    </div>
+    </form>
+            {% endblock %}

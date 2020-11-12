@@ -1,0 +1,77 @@
+{% extends 'Planillabase.html' %}
+{% block contenido %}
+<form action="{% url 'registro' %}" method="post">
+{% csrf_token %}
+<br>
+<div class="row justify-content-center">
+    <h2>Cotizaciones</h2>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Nombre
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtNombre" class="txtNombre form-control" required>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Email
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtEmail" class="txtNombre form-control" required>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Telefono
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtTelefono" class="txtTelefono form-control" required>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Cuidad
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtCuidad" class="txtNombre form-control" required>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Producto
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtProducto" class="txtNombre form-control" required>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Cantidad
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtCantidad" class="txtNombre form-control" required>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-1">
+        Comentario
+    </div>
+    <div class="col-12 col-md-4">
+        <input type="text" name="txtComentario" class="txtNombre form-control" required>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-3">
+        <input type="submit" name="btnRnviar" class="btn btn-primary" value="Registrarse">
+    <br>
+        <a href="{% url 'login' %}" class="col-12 col-md-4 center-3">¿Ya estas registrado? Click Aqui</a>
+    </div>
+</div>
+</form>
+        {% endblock %}

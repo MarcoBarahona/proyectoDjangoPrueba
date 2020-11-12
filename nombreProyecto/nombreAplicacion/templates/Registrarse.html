@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Registrarse</title>
+        <link rel="icon" type="img/png" href="Iconos/icono2.png">
+        <meta charset="utf-8">
+        <!--importar bootstrap y js-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="Query js/RegistrarseQuery.js"></script>
+    </head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img src="Iconos/icono2.png" width="30" height="30" class="d-line-block aling-top" alt="">   
+               Registrarse</a>
+        </nav>
+    <body>
+    <br>
+      <div class="row justify-content-center">
+          <h2>Datos del Usuario</h2>
+      </div>
+      <br><br>
+      <form action="Registrarse.html" method="POST">
+      <div class="row">
+            <div class="col-12 col-md-1 offset-md-4">
+              Email
+          </div>
+          <div class="col-12 col-md-3">
+              <input type="text" name="txtEmail" class="txtEmail form-control" placeholder="mail@dominio.cl">
+          </div>
+      </div>  
+         <br><br>     
+      <div class="row">
+            <div class="col-12 col-md-1 offset-md-4">
+              Nombres
+          </div>
+          <div class="col-12 col-md-3">
+              <input type="text" name="txtNombres" class="txtNombres form-control" placeholder="Ingrese su Nombres">
+          </div>
+      </div> 
+          <br><br>
+          <div class="row">
+            <div class="col-12 col-md-1 offset-md-4">
+              Apellidos
+          </div>
+          <div class="col-12 col-md-3">
+              <input type="text" name="txtApellidos" class="txtApellidos form-control" placeholder="Ingrese su Apellidos">
+          </div>
+      </div>      
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-12 col-md-1 offset-md-4">
+          Rut
+      </div>
+      <div class="col-12 col-md-3">
+          <input type="text" name="txtRut" class="txtRut form-control" placeholder="Ingrese su Rut">
+      </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-12 col-md-1 offset-md-4">
+          Telefono
+      </div>
+      <div class="col-12 col-md-3">
+          <input type="text" name="txtTelefono" class="txtTelefono form-control" placeholder="Ingrese su numero de telefono">
+      </div>
+      </div>
+      <br><br>
+      <div class="row">
+          <div class="col-12 col-md-1 offset-md-4">
+            Region
+          </div> 
+          <select name="Region">
+              <option value="0">seleccionar</option>
+              <option value="1">Tarapacá</option>
+              <option value="2">Antofagasta</option>
+              <option value="3">Atacama</option>
+              <option value="4">Parinacota</option>
+              <option value="5">Aysén</option>
+              <option value="6">Bío-Bío</option>
+              <option value="7">Coquimbo</option>
+              <option value="8">La Araucanía</option>
+              <option value="9">Los Lagos</option>
+              <option value="10">Los Ríos</option>
+              <option value="11">Magallanes</option>
+              <option value="12">Maule</option>
+              <option value="13">RM</option>
+              <option value="14">Ñuble</option>
+              <option value="15">O´Higgins</option>
+              <option value="16">Valparaíso</option>
+          </select>
+      </div>
+          <br><br>
+        <div class="row">
+            <div class="col-12 col-md-1 offset-md-4">
+              Cuidad
+            </div>
+            <select name="Cuidad">
+                <option value="0">seleccionar</option>
+                <option value="1">Iquique</option>
+                <option value="2">Antofagasta</option>
+                <option value="3">Copiapó</option>
+                <option value="4">Arica</option>
+                <option value="5">Coyhaique</option>
+                <option value="6">Concepción</option>
+                <option value="7">La Serena</option>
+                <option value="8">Temuco</option>
+                <option value="9">Puerto Montt</option>
+                <option value="10">Valdivia</option>
+                <option value="11">Punta Arenas</option>
+                <option value="12">Talca</option>
+                <option value="13">Santiago</option>
+                <option value="14">Chillán</option>
+                <option value="15">Rancagua</option>
+                <option value="16">Valparaíso</option>
+            </select> 
+        </div>
+          <br><br>
+          <div class="row">
+              <div class="col-12 col-md-1 offset-md-4">
+                  Nivel Educacional
+              </div>
+              <select name="NivelEducacion">
+                  <option value="0">Opciones</option>
+                  <option value="1">Doctor</option>
+                  <option value="2">Magister</option>
+                  <option value="3">Profesional</option>
+                  <option value="4">Educacion Media</option>
+                  <option value="5">Educacion Basica</option>
+                  <option value="6">Otra</option>
+              </select>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-12 col-md-1 offset-md-4">
+              Contraseña
+          </div>
+          <div class="col-12 col-md-3">
+              <input type="text" name="txtContraseña" class="txtContraseña form-control" placeholder="Ingrese su Contraseña">
+          </div>
+          </div> 
+        <br><br>
+        <div class="row">
+            <div class="col-12 col-md-1 offset-md-4">
+              Confirmar Contraseña
+          </div>
+          <div class="col-12 col-md-3">
+              <input type="text" name="txtContraseña" class="txtContraseña form-control" placeholder="Repita su Contraseña">
+          </div>
+          </div> 
+        <br><br>
+        <div class="row">
+        <div class="col-12 col-md-1 offset-md-4">
+                Opciones
+            </div>
+            <div class="col-12 col-md-4">
+                <input type="submit" name="btnAtras" class="btnAtras btn-light btn-outline-danger" value="Atras">
+                <input type="submit" name="btnAceptar" class="btnAceptar btn-primary" value="Enviar">
+                <input type="submit" name="btnLimpiar" class="btnLimpiar btn-success" value="Limpiar">
+                <br></br>
+                <a href="resetpassword.html" class="col-12 col-md-4 center-3">¿Ya estas registrado? Click Aqui</a>
+            </div>
+            </div>    
+  </div> 
+</form>    
+    </body>
+</html>
